@@ -99,7 +99,7 @@ async function obtenerDatosDynamoDB() {
         } else {
             data.Items.forEach(item => {
                 const listItem = document.createElement('li');
-                listItem.innerHTML = `Nombre: ${item.nombre}, Correo: ${item.correo}, Cédula: ${item.cedula}, Foto: <a href="${item.foto}" target="_blank">${item.foto}</a>`;
+                listItem.innerHTML = `Nombre: ${item.nombre},Apellido: ${item.apellido}, Correo: ${item.correo}, Cédula: ${item.cedula}, Foto: <a href="${item.foto}" target="_blank">${item.foto}</a>`;
                 dataList.appendChild(listItem);
             });
         }
